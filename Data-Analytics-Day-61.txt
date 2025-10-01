@@ -1,0 +1,67 @@
+Data Analytics Lessons
+
+🔹 Lesson 1: Big Data Workflow (ETL)
+=======================================
+Summary:
+Big data pipelines usually follow ETL (Extract, Transform, Load) steps.
+Extract: from multiple sources (databases, APIs, sensors)
+Transform: cleaning, aggregating, enriching
+Load: into warehouses or lakes (Snowflake, Hadoop, etc.)
+
+Example:
+E-commerce ETL: Pull customer orders → clean missing values → load into Redshift for dashboards.
+
+
+🔹 Lesson 2: Spark MLlib Basics
+===================================
+Summary:
+MLlib = Spark’s machine learning library for distributed ML.
+Classification, regression, clustering
+Scales to millions of rows
+Integrates with Spark SQL
+
+Example:
+Train a logistic regression model on millions of clickstream logs directly in Spark.
+
+
+🔹 Lesson 3: Clustering (K-Means in Spark)
+=============================================
+Summary:
+Clustering groups similar data points without labels.
+K-Means is most popular (partition into K groups)
+Uses distance metrics like Euclidean
+Good for segmentation
+
+Example:
+Bank segments customers into 3 groups:
+High spenders
+Moderate users
+Low spenders
+
+
+🔹 Lesson 4: Anomaly Detection in Big Data
+=============================================
+Summary:
+Detecting outliers in huge datasets helps identify fraud, errors, or unusual behavior.
+Methods: Z-score, Isolation Forest, DBSCAN
+Spark MLlib scales anomaly detection to billions of rows
+
+Example:
+Telecom company flags sudden network spikes as anomalies to detect system issues early.
+
+
+
+🔹 Lesson 5: Case Study – IoT Sensor Analytics
+=============================================
+Summary:
+Steps:
+-------
+ETL pipeline ingests sensor data from IoT devices
+Spark MLlib clusters usage patterns
+Anomaly detection identifies faulty devices
+Dashboards show trends in real-time
+
+Example:
+Smart factory detects 5% of machines overheating → triggers preventive maintenance.
+
+
